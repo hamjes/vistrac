@@ -9,17 +9,17 @@ const manifest = {
   name: packageJson.name,
   version: packageJson.version,
   description: packageJson.description,
-  permissions: ['storage', 'sidePanel'],
+  permissions: ['webNavigation', 'tabs', 'storage'],
   background: {
     service_worker: 'src/pages/background/index.js',
     type: 'module',
   },
   action: {
     default_popup: 'src/pages/popup/index.html',
-    default_icon: 'icon-34.png',
+    default_icon: '/icon/icon-34.png',
   },
   icons: {
-    128: 'icon-128.png',
+    128: '/icon/icon-128.png',
   },
   content_scripts: [],
   web_accessible_resources: [

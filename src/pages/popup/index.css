@@ -1,17 +1,51 @@
 body {
-  text-align:center;
-  font-size:30px;
-  background-color: lightblue;
-  color:rgb(0, 21, 255);
+  text-align: center;
+  font-size: 40px;
+  background-color: #1C1A24;
   width: 350px;
-  height: 450px;
+  height: 400px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   position: relative;
+  margin-top: 2rem;
+}
+
+.reset {
+  font-size: 40px;
+  font-weight: medium;
+  font-family: "Inter";
+  background-color: #36306A;
+  color: #867DA9;
+  height: 75px;
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+.visit {
+  color: #867DA9;
+  font-family: "Inter";
+  font-weight: medium;
+  margin-top: 60px;
+}
+
+.sitename {
+  color: #484163;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.numbers {
+  color: #B8B4C9;
+  font-family: "Inter";
+  font-size: 81px;
+  font-weight: medium;
+  margin-top: 15px;
 }
 
 code {
