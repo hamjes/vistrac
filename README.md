@@ -6,7 +6,7 @@
 # Vistrac: Effortless Web Activity Tracking
 
 ## Overview
-In the era of constant connectivity, Vistrac is your go-to Chrome extension for seamless and intelligent tracking of website visits. With its sleek interface and robust features, Vistrac provides accurate insights into your online habits, enabling you to manage productivity and foster a balanced digital lifestyle.
+In the era of constant connectivity, Vistrac is your go-to extension for seamless and intelligent tracking of website visits. With its sleek interface and robust features, Vistrac provides accurate insights into your online habits, enabling you to manage productivity and foster a balanced digital lifestyle.
 
 ## Features
 - **Accurate Tracking:** Precisely count and see every website visit.
@@ -15,7 +15,8 @@ In the era of constant connectivity, Vistrac is your go-to Chrome extension for 
 - **Privacy First:** Operates securely on your local machine, ensuring data privacy.
 - **User-Friendly Interface:** Access your data with a clean and intuitive design.
 ## Installation
--Firefox:https://addons.mozilla.org/sv-SE/firefox/addon/vistrac/
+- **Firefox:** https://addons.mozilla.org/sv-SE/firefox/addon/vistrac/
+- **Chrome:** In progress.
 ## Usage
 Open Vistrac from the Chrome extension toolbar.
 Explore your visit amount and gain insights into your web activity.
