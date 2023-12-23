@@ -14,14 +14,25 @@ body {
   margin-top: 2rem;
 }
 
-.reset {
-  font-size: 40px;
+.clear {
+  font-size: 20px;
   font-weight: medium;
   font-family: "Inter";
   background-color: #36306A;
   color: #867DA9;
   height: 75px;
-  width: 300px;
+  width: 150px;
+  margin-bottom: 25px;
+}
+
+.reset {
+  font-size: 20px;
+  font-weight: medium;
+  font-family: "Inter";
+  background-color: #36306A;
+  color: #867DA9;
+  height: 75px;
+  width: 150px;
   margin-bottom: 25px;
 }
 
@@ -30,6 +41,7 @@ body {
   font-family: "Inter";
   font-weight: medium;
   margin-top: 60px;
+  margin-bottom: 15px;
 }
 
 .sitename {
@@ -37,7 +49,6 @@ body {
   font-family: "Inter";
   font-size: 16px;
   font-weight: bold;
-  margin-top: 10px;
 }
 
 .numbers {
@@ -50,4 +61,15 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.icon {
+  margin-right: 1rem;
+  width: 20px;
+}
+
+.url {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

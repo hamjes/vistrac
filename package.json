@@ -1,6 +1,6 @@
 {
-  "name": "counter",
-  "version": "0.0.1",
+  "name": "vistrac",
+  "version": "0.0.2",
   "description": "Measure your productivity. Counts how many times you have been on a website, during the day!",
   "license": "MIT",
   "scripts": {
