@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@tanstack/react-query':
-    specifier: ^5.14.1
-    version: 5.14.1(react@18.2.0)
+    specifier: ^5.14.6
+    version: 5.14.6(react@18.2.0)
   construct-style-sheets-polyfill:
     specifier: 3.1.0
     version: 3.1.0
@@ -1014,16 +1014,16 @@ packages:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
-  /@tanstack/query-core@5.14.1:
-    resolution: {integrity: sha512-TlZarySCVEiap4K7BCvrsYZnX7jBbEkR55YMrk8ELcRbuAx6ydL+qoxqUt8Fq8VMvQyGt52icn6T7eJL1Q35KQ==}
+  /@tanstack/query-core@5.14.2:
+    resolution: {integrity: sha512-QmoJvC72sSWs3hgGis8JdmlDvqLfYGWUK4UG6OR9Q6t28JMN9m2FDwKPqoSJ9YVocELCSjMt/FGjEiLfk8000Q==}
     dev: false
 
-  /@tanstack/react-query@5.14.1(react@18.2.0):
-    resolution: {integrity: sha512-v7jhe/3jhChiR0XJbGHaG5WNPd/cURwzDGBCr4rzpUTeudPzxrtVRKsF1xJRLcJK3qH/0gIwTYHIPZ3gj+01Yw==}
+  /@tanstack/react-query@5.14.6(react@18.2.0):
+    resolution: {integrity: sha512-+INnJdq/904d+K2XQjqdIC58glpNGfQ8Xz93M6WBeJs5FPGFV8SEuFVzPtW/bKZ/Hu7hAiJpbFLDg5Lysvwmuw==}
     peerDependencies:
       react: ^18.0.0
     dependencies:
-      '@tanstack/query-core': 5.14.1
+      '@tanstack/query-core': 5.14.2
       react: 18.2.0
     dev: false
 
