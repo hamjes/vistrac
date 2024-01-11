@@ -19,6 +19,8 @@
     "paths": {
       "@root/*": ["./*"],
       "@src/*": ["src/*"],
+      "@/lib/*": ["src/pages/popup/lib/*"],
+      "@/components/*": ["src/pages/popup/components/*"],
       "@assets/*": ["src/assets/*"],
       "@pages/*": ["src/pages/*"],
       "virtual:reload-on-update-in-background-script": ["./src/global.d.ts"],

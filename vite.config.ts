@@ -25,6 +25,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@root': rootDir,
+      '@/lib': resolve(pagesDir, 'popup/lib'),
+      '@/components': resolve(pagesDir, 'popup/components'),
       '@src': srcDir,
       '@assets': assetsDir,
       '@pages': pagesDir,
