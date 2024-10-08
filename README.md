@@ -16,7 +16,7 @@ In the era of constant connectivity, Vistrac is your go-to extension for seamles
 - **User-Friendly Interface:** Access your data with a clean and intuitive design.
 ## Installation
 - **Firefox:** https://addons.mozilla.org/sv-SE/firefox/addon/vistrac/
-- **Chrome:** In progress.
+- **Chrome:** https://chromewebstore.google.com/detail/vistrac/flgmfgdfjhbjbpefgoleihmljbjecmbd
 ## Usage
 Open Vistrac from the Chrome extension toolbar.
 Explore your visit amount and gain insights into your web activity.
