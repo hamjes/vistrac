@@ -24,21 +24,21 @@ body {
   width: 150px;
   margin-bottom: 25px;
   border-radius: 7%;
-  border:0;
-  margin-left:15px;
+  border: 0;
+  margin-left: 15px;
 }
 
 .reset {
   font-size: 20px;
   font-weight: medium;
   font-family: "Inter";
-  background-color:#2C2938;
+  background-color: #2C2938;
   color: #867DA9;
   height: 55px;
   width: 150px;
   margin-bottom: 25px;
-  border-radius: 7%;  
-  border:0;
+  border-radius: 7%;
+  border: 0;
 }
 
 .visit {
@@ -78,4 +78,55 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.home {
+  color: #484163;
+  font-size: 50%;
+  height: 40%;
+  width: 40px;
+  margin-top: 0px;
+  margin-left: -265px;
+}
+
+.next {
+  color: #484163;
+  font-size: 50%;
+  height: 40%;
+  width: 40px;
+  margin-top: 0px;
+  margin-right: -265px;
+}
+
+.allvisits {
+  color: #867DA9;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 50%;
+  text-align: center;
+}
+
+.allnumbers {
+  color: #B8B4C9;
+  font-family: "Inter";
+  font-size: 25px;
+  font-weight: medium;
+  margin-top: -30px;
+  margin-bottom: 25px;
+  margin-left: 200px;
+}
+
+.allsitenames {
+  color: #484163;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.allurl {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-left: 30px;
+  margin-top: 10px;
 }

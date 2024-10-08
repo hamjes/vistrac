@@ -7,14 +7,15 @@ import {
   AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
-  AlertDialogDescription,
+  AlertDialogDescription, 
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
 } from '../components/ui/alert-dialog';
+import { FC } from 'react';
 
-export const Homepage = () => {
+export const Homepage: FC<{ next: () => void }> = ({ next }) => {
   const currentpage = useCurrentTabInfo();
 
   const visits = useQuery({
@@ -28,7 +29,7 @@ export const Homepage = () => {
     },
   });
 
-  // Define a function to clear the storage
+  // Clear the storage
   function clearStorage() {
     chrome.storage.local.clear(function () {
       console.log('Chrome storage cleared.');
@@ -36,7 +37,7 @@ export const Homepage = () => {
     });
   }
 
-  // Define a function to clear the storage
+  // Clear the storage
   function clearPage() {
     chrome.storage.local.remove(currentpage?.data?.origin, function () {
       console.log('Chrome storage cleared.');
@@ -44,9 +45,14 @@ export const Homepage = () => {
     });
   }
 
-  return (
+return (
     <div className="App">
-      <img src="/logo.png" alt="Vistrac logo" className="t mx-auto mt-5" />
+      <div>
+        <button className="next" onClick={next}>
+          ALL
+        </button>
+        <img src="/logo.png" alt="Vistrac logo" className="t mx-auto mt-5" />
+      </div>
       <div className="visit">Visits:</div>
       <div className="url">
         <img src={faviconFromUrl(currentpage?.data?.origin)} alt="site logo" className="icon" />
@@ -61,9 +67,7 @@ export const Homepage = () => {
       )}
       <AlertDialog>
         <AlertDialogTrigger asChild>
-          <button className="reset bg-primary">
-            Reset page
-          </button>
+          <button className="reset bg-primary">Reset page</button>
         </AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogHeader>
@@ -81,9 +85,7 @@ export const Homepage = () => {
 
       <AlertDialog>
         <AlertDialogTrigger asChild>
-          <button className="clear bg-primary">
-            Reset all
-          </button>
+          <button className="clear bg-primary">Reset all</button>
         </AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogHeader>
