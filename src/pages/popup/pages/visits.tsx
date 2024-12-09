@@ -1,38 +1,37 @@
-import { useCurrentTabInfo } from '../hooks/useCurrentTabInfo';
-import { useQuery } from '@tanstack/react-query';
-import { readChromeStorageCount } from '@root/src/shared/utils/readChromeStorageCount';
-import { faviconFromUrl } from '../utils/favicon';
+import { useEffect, useState } from 'react';
 import { FC } from 'react';
+import { faviconFromUrl } from '../utils/favicon';  // You may need to adjust this import based on your project
 
 export const VisitsPage: FC<{ goBack: () => void }> = ({ goBack }) => {
-  const currentpage = useCurrentTabInfo();
+  // State to store all visited URLs and their counts
+  const [visitsData, setVisitsData] = useState<{ [url: string]: number }>({});
 
-  const visits = useQuery({
-    queryKey: ['visits', currentpage.data],
-    enabled: currentpage.data !== undefined,
-    queryFn: async () => {
-      console.log('data', currentpage.data);
-      const number = await readChromeStorageCount(currentpage.data.origin);
-
-      return number;
-    },
-  });
+  useEffect(() => {
+    // Fetch all stored URLs and their visit counts from chrome.storage
+    chrome.storage.local.get(null, (result) => {
+      setVisitsData(result);  // result is an object with URLs as keys and visit counts as values
+    });
+  }, []);
 
   return (
     <div className="App">
       <div>
-      <button className="home" onClick={goBack}>
+        <button className="home" onClick={goBack}>
           HOME
         </button>
       </div>
       <div className="allvisits">ALL VISITS:</div>
-      <div className="allurl">
-        <img src={faviconFromUrl(currentpage?.data?.origin)} alt="site logo" className="icon" />
-        <div className="allsitenames">{currentpage?.data?.origin}</div>
+
+      {/* Loop through all visited URLs and their visit counts */}
+      <div className="allurls">
+        {Object.keys(visitsData).map((url, index) => (
+          <div key={index} className="allurl">
+            <img src={faviconFromUrl(url)} alt="site logo" className="icon" />
+            <div className="allsitenames">{url}</div>
+            <div className="allnumbers">{visitsData[url]}</div>
+          </div>
+        ))}
       </div>
-      <>
-        <div className="allnumbers">{visits?.data?.toString()}</div>
-      </>
     </div>
   );
 };

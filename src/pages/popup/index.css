@@ -1,12 +1,12 @@
 body {
   text-align: center;
   font-size: 40px;
-  background-color: #1C1A24 !important;
+  background-color: #1c1a24 !important;
   width: 350px;
   height: 400px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -17,9 +17,9 @@ body {
 .clear {
   font-size: 20px;
   font-weight: medium;
-  font-family: "Inter";
-  background-color: #2C2938;
-  color: #867DA9;
+  font-family: 'Inter';
+  background-color: #2c2938;
+  color: #867da9;
   height: 55px;
   width: 150px;
   margin-bottom: 25px;
@@ -31,9 +31,9 @@ body {
 .reset {
   font-size: 20px;
   font-weight: medium;
-  font-family: "Inter";
-  background-color: #2C2938;
-  color: #867DA9;
+  font-family: 'Inter';
+  background-color: #2c2938;
+  color: #867da9;
   height: 55px;
   width: 150px;
   margin-bottom: 25px;
@@ -42,8 +42,8 @@ body {
 }
 
 .visit {
-  color: #867DA9;
-  font-family: "Inter";
+  color: #867da9;
+  font-family: 'Inter';
   font-weight: medium;
   margin-top: 60px;
   margin-bottom: 15px;
@@ -51,14 +51,14 @@ body {
 
 .sitename {
   color: #484163;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 16px;
   font-weight: bold;
 }
 
 .numbers {
-  color: #B8B4C9;
-  font-family: "Inter";
+  color: #b8b4c9;
+  font-family: 'Inter';
   font-size: 81px;
   font-weight: medium;
   margin-top: 15px;
@@ -99,34 +99,80 @@ code {
 }
 
 .allvisits {
-  color: #867DA9;
-  font-family: "Inter";
+  color: #867da9;
+  font-family: 'Inter';
   font-weight: bold;
-  font-size: 50%;
+  font-size: 20px;
   text-align: center;
-}
-
-.allnumbers {
-  color: #B8B4C9;
-  font-family: "Inter";
-  font-size: 25px;
-  font-weight: medium;
-  margin-top: -30px;
-  margin-bottom: 25px;
-  margin-left: 200px;
-}
-
-.allsitenames {
-  color: #484163;
-  font-family: "Inter";
-  font-size: 12px;
-  font-weight: bold;
+  margin-top: 10px;
 }
 
 .allurl {
   display: flex;
-  align-items: left;
-  justify-content: left;
-  margin-left: 30px;
-  margin-top: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 15px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.allsitenames {
+  color: #484163;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: bold;
+  max-width: 180px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.allnumbers {
+  color: #b8b4c9;
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: medium;
+  margin-left: 10px;
+}
+
+.allurl {
+  flex-wrap: nowrap;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2c2938; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #867da9; 
+  border-radius: 10px; 
+  border: 2px solid #2c2938; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b8b4c9;
+}
+
+::-webkit-scrollbar:active {
+  background-color: #b8b4c9; 
+}
+
+::-webkit-scrollbar-horizontal {
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb-horizontal {
+  background-color: #867da9; 
 }
